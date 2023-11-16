@@ -13,7 +13,7 @@ void printArray(int array[], int size, const char *label)
 
 int main()
 {
-    // Example usage
+    // Test case 1: Regular array
     int array1[] = {64, 25, 12, 22, 11, 1, 0, 48, 100};
     int size1 = sizeof(array1) / sizeof(array1[0]);
 
@@ -21,7 +21,7 @@ int main()
     bubbleSort(array1, size1);
     printArray(array1, size1, "Sorted Array");
 
-    // Test case 1: Empty array
+    // Test case 2: Empty array
     int emptyArray[] = {};
     int sizeEmpty = sizeof(emptyArray) / sizeof(emptyArray[0]);
 
@@ -29,7 +29,7 @@ int main()
     bubbleSort(emptyArray, sizeEmpty);
     printArray(emptyArray, sizeEmpty, "Sorted Empty Array");
 
-    // Test case 2: Array with a single element
+    // Test case 3: Array with a single element
     int singleElementArray[] = {42};
     int sizeSingle = sizeof(singleElementArray) / sizeof(singleElementArray[0]);
 
@@ -37,7 +37,7 @@ int main()
     bubbleSort(singleElementArray, sizeSingle);
     printArray(singleElementArray, sizeSingle, "Sorted Single Element Array");
 
-    // Test case 3: Already sorted array
+    // Test case 4: Already sorted array
     int sortedArray[] = {1, 2, 3, 4, 5};
     int sizeSorted = sizeof(sortedArray) / sizeof(sortedArray[0]);
 
@@ -45,7 +45,7 @@ int main()
     bubbleSort(sortedArray, sizeSorted);
     printArray(sortedArray, sizeSorted, "Sorted Already Sorted Array");
 
-    // Test case 4: Array with duplicate elements
+    // Test case 5: Array with duplicate elements
     int duplicateArray[] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
     int sizeDuplicate = sizeof(duplicateArray) / sizeof(duplicateArray[0]);
 
