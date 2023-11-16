@@ -1,3 +1,8 @@
+# .gitignore
+# This file specifies intentionally untracked files to ignore when using Git.
+# It follows best practices for excluding build artifacts, temporary files,
+# and system-specific files from version control.
+
 # Object files
 *.o
 *.ko
@@ -48,5 +53,18 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Exclude .DS_Store files
+# macOS specific files
 .DS_Store
+
+# CMake generated files
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/CMakeScripts/
+/cmake_install.cmake
+/CTestTestfile.cmake
+/*.cmake
+/*.cbp
+
+# Visual Studio Code specific files
+.vscode/

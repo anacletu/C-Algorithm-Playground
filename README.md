@@ -96,6 +96,26 @@ Conduct manual tests for various algorithms to ensure their correctness.
 
 - [Manual Test for Bubble Sort](tests/manual_test_bubble_sort.c): A manual test for the bubble sort algorithm.
 
+## Build Instructions for Testing
+
+To build the project and run the tests, follow these steps:
+
+1. Install CMake: Visit [CMake](https://cmake.org/download/) to download and install CMake for your platform.
+2. Create a build directory: `mkdir build`
+3. Navigate to the build directory: `cd build`
+4. Generate build files using CMake: `cmake ..`
+5. Build the project: `cmake --build .`
+
+### Run Manual Tests
+
+To run manual tests for specific algorithms, use the following command:
+
+- Example for Bubble Sort: `./manual_test_bubble_sort`
+- Example for Insertion Sort: `./manual_test_insertion_sort`
+- Add other tests similarly for each algorithm.
+
+The compiled executables will be available in the build directory.
+
 ## Contribution
 
 Feel free to contribute by adding new algorithms, variations, or challenges. Your contributions are highly appreciated!

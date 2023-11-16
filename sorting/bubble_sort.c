@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "bubble_sort.h"
 
 /**
  * Problem:
@@ -9,19 +10,26 @@
  *   - Repeat this process until the array is sorted.
  */
 
-// TODO: Implement the bubbleSort function
-
-int main()
-{
-    // Example usage
-    int array[] = {64, 25, 12, 22, 11};
-    int size = sizeof(array) / sizeof(array[0]);
-
-    // TODO: Call the bubbleSort function and display the sorted array
-
-    return 0;
-}
-
 void bubbleSort(int arr[], size_t size)
 {
+    if (arr == NULL || size <= 1)
+        return; // Nothing to sort
+
+    for (int i = 0; i < size - 1; i++)
+    {
+        int swapped = 0; // Flag to check if any swaps were made
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                int tmp = arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = tmp;
+                swapped = 1;
+            }
+        }
+        // If no swaps were made, the array is already sorted
+        if (!swapped)
+            break;
+    }
 }
