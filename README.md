@@ -24,6 +24,7 @@ Explore various sorting algorithms to understand their efficiency and implementa
 - [Merge Sort](sorting/merge_sort.c): A divide-and-conquer algorithm that divides the array into two halves, sorts them, and then merges the sorted halves.
 - [Quick Sort](sorting/quick_sort.c): A fast, in-place sorting algorithm that uses a divide-and-conquer strategy.
 - [Insertion Sort](sorting/insertion_sort.c): Builds the sorted array one item at a time by repeatedly taking an element from the unsorted part and inserting it into its correct position.
+- [Selection Sort](sorting/selection_sort.c): A simple sorting algorithm that divides the input list into a sorted and an unsorted region. It repeatedly selects the smallest (or largest) element from the unsorted region and swaps it with the first element of the unsorted region.
 
 ## Searching
 

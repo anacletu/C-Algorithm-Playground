@@ -6,27 +6,28 @@ In this document, we analyze the time complexity of various algorithms implement
 
 1. [Bubble Sort](#bubble-sort)
 2. [Insertion Sort](#insertion-sort)
-3. [Merge Sort](#merge-sort)
-4. [Quick Sort](#quick-sort)
-5. [Linear Search](#linear-search)
-6. [Binary Search](#binary-search)
-7. [Interpolation Search](#interpolation-search)
-8. [Singly Linked List](#singly-linked-list)
-9. [Doubly Linked List](#doubly-linked-list)
-10. [Circular Linked List](#circular-linked-list)
-11. [Binary Tree](#binary-tree)
-12. [AVL Tree](#avl-tree)
-13. [Post-order Traversal](#post-order-traversal)
-14. [Queue using Linked List](#queue-using-linked-list)
-15. [Queue using Array](#queue-using-array)
-16. [Priority Queue](#priority-queue)
-17. [Stack using Linked List](#stack-using-linked-list)
-18. [Stack using Array](#stack-using-array)
-19. [Enhanced Stack](#enhanced-stack)
-20. [Recursive Pathfinder](#recursive-pathfinder)
-21. [Dijkstra's Pathfinder](#dijkstras-pathfinder)
-22. [Longest Increasing Subsequence](#longest-increasing-subsequence)
-23. [Sliding Window Pattern](#sliding-window-pattern)
+3. [Selection Sort](#selection-sort)
+4. [Merge Sort](#merge-sort)
+5. [Quick Sort](#quick-sort)
+6. [Linear Search](#linear-search)
+7. [Binary Search](#binary-search)
+8. [Interpolation Search](#interpolation-search)
+9. [Singly Linked List](#singly-linked-list)
+10. [Doubly Linked List](#doubly-linked-list)
+11. [Circular Linked List](#circular-linked-list)
+12. [Binary Tree](#binary-tree)
+13. [AVL Tree](#avl-tree)
+14. [Post-order Traversal](#post-order-traversal)
+15. [Queue using Linked List](#queue-using-linked-list)
+16. [Queue using Array](#queue-using-array)
+17. [Priority Queue](#priority-queue)
+18. [Stack using Linked List](#stack-using-linked-list)
+19. [Stack using Array](#stack-using-array)
+20. [Enhanced Stack](#enhanced-stack)
+21. [Recursive Pathfinder](#recursive-pathfinder)
+22. [Dijkstra's Pathfinder](#dijkstras-pathfinder)
+23. [Longest Increasing Subsequence](#longest-increasing-subsequence)
+24. [Sliding Window Pattern](#sliding-window-pattern)
 
 ## Bubble Sort
 
@@ -39,6 +40,12 @@ The Bubble Sort algorithm has a quadratic time complexity. In the worst-case sce
 ### Time Complexity: O(n^2)
 
 Insertion Sort also has a quadratic time complexity. In the worst-case scenario, where the array is sorted in reverse order, it requires n^2 / 2 comparisons and n^2 / 2 swaps to sort an array of n elements.
+
+## Selection Sort
+
+### Time Complexity: O(n^2)
+
+Selection Sort has a quadratic time complexity. In the worst-case scenario, where the array is sorted in reverse order, it requires n passes to sort an array of n elements.
 
 ## Merge Sort
 
