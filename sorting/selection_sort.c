@@ -20,6 +20,9 @@ void selectionSort(int arr[], size_t size)
     for (int i = 0; i < size - 1; i++)
     {
         key = arr[i];
+        index = i; // Initialize index to i
+
+        // Find the index of the minimum element in the unsorted region
         for (int j = 1 + i; j < size; j++)
         {
             if (arr[j] < key)
@@ -28,7 +31,9 @@ void selectionSort(int arr[], size_t size)
                 index = j;
             }
         }
-        if (key != arr[i])
+
+        // Swap the minimum element with the first element of the unsorted region
+        if (index != i)
         {
             arr[index] = arr[i];
             arr[i] = key;

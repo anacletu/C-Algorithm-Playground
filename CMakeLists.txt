@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.27.8)
 project(C-Algorithm-Playground)
 
 # Set C standard to C11
@@ -21,5 +21,11 @@ add_subdirectory(sorting)
 # Manual tests
 add_executable(manual_test_bubble_sort tests/manual_test_bubble_sort.c)
 target_link_libraries(manual_test_bubble_sort PRIVATE bubble_sort)
+
+add_executable(manual_test_selection_sort tests/manual_test_selection_sort.c)
+target_link_libraries(manual_test_selection_sort PRIVATE selection_sort)
+
+add_executable(manual_test_insertion_sort tests/manual_test_insertion_sort.c)
+target_link_libraries(manual_test_insertion_sort PRIVATE insertion_sort)
 
 # Add other tests similarly...

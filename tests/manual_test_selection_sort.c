@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../sorting/bubble_sort.h"
+#include "../sorting/selection_sort.h"
 
 void printArray(int array[], size_t size, const char *label)
 {
@@ -18,7 +18,7 @@ int main()
     size_t size1 = sizeof(array1) / sizeof(array1[0]);
 
     printArray(array1, size1, "Original Array");
-    bubbleSort(array1, size1);
+    selectionSort(array1, size1);
     printArray(array1, size1, "Sorted Array");
 
     // Test case 2: Empty array
@@ -26,7 +26,7 @@ int main()
     size_t sizeEmpty = sizeof(emptyArray) / sizeof(emptyArray[0]);
 
     printArray(emptyArray, sizeEmpty, "Empty Array");
-    bubbleSort(emptyArray, sizeEmpty);
+    selectionSort(emptyArray, sizeEmpty);
     printArray(emptyArray, sizeEmpty, "Sorted Empty Array");
 
     // Test case 3: Array with a single element
@@ -34,7 +34,7 @@ int main()
     size_t sizeSingle = sizeof(singleElementArray) / sizeof(singleElementArray[0]);
 
     printArray(singleElementArray, sizeSingle, "Single Element Array");
-    bubbleSort(singleElementArray, sizeSingle);
+    selectionSort(singleElementArray, sizeSingle);
     printArray(singleElementArray, sizeSingle, "Sorted Single Element Array");
 
     // Test case 4: Already sorted array
@@ -42,7 +42,7 @@ int main()
     size_t sizeSorted = sizeof(sortedArray) / sizeof(sortedArray[0]);
 
     printArray(sortedArray, sizeSorted, "Already Sorted Array");
-    bubbleSort(sortedArray, sizeSorted);
+    selectionSort(sortedArray, sizeSorted);
     printArray(sortedArray, sizeSorted, "Sorted Already Sorted Array");
 
     // Test case 5: Array with duplicate elements
@@ -50,7 +50,7 @@ int main()
     size_t sizeDuplicate = sizeof(duplicateArray) / sizeof(duplicateArray[0]);
 
     printArray(duplicateArray, sizeDuplicate, "Array with Duplicates");
-    bubbleSort(duplicateArray, sizeDuplicate);
+    selectionSort(duplicateArray, sizeDuplicate);
     printArray(duplicateArray, sizeDuplicate, "Sorted Array with Duplicates");
 
     return 0;

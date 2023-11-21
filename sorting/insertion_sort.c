@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "insertion_sort.h"
 
 /**
  * Problem:
@@ -9,15 +9,21 @@
  *     and inserting them into their correct position in the sorted part.
  */
 
-// TODO: Implement the insertionSort function
-
-int main()
+void insertionSort(int arr[], size_t size)
 {
-    // Example usage
-    int array[] = {64, 25, 12, 22, 11};
-    int size = sizeof(array) / sizeof(array[0]);
+    if (arr == NULL || size <= 1)
+        return; // Nothing to sort
 
-    // TODO: Call the insertionSort function and display the sorted array
+    for (int i = 1; i < size; i++)
+    {
+        int current = arr[i];
+        int previous = i - 1;
 
-    return 0;
+        while (previous >= 0 && arr[previous] > current)
+        {
+            arr[previous + 1] = arr[previous];
+            previous--;
+        }
+        arr[previous + 1] = current;
+    }
 }
