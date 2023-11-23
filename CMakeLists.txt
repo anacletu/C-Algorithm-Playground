@@ -9,6 +9,9 @@ set(CMAKE_C_EXTENSIONS OFF)
 # Include directories
 include_directories(${CMAKE_SOURCE_DIR})
 
+# Set the output directory for executables
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/tests)
+
 # Function to add an algorithm (creates a library)
 function(add_algorithm ALGORITHM_NAME)
     add_subdirectory(${ALGORITHM_NAME})
