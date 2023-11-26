@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "quick_sort.h"
 
 /**
  * Problem:
@@ -10,15 +10,35 @@
  *   - Recursively sort the subarrays.
  */
 
-// TODO: Implement the quickSort function
-
-int main()
+void quickSort(int arr[], int low, int high)
 {
-    // Example usage
-    int array[] = {64, 25, 12, 22, 11};
-    int size = sizeof(array) / sizeof(array[0]);
+    if (low >= high || arr == NULL)
+        return; // Nothing to sort
 
-    // TODO: Call the quickSort function and display the sorted array
+    int pivotIdx = partition(arr, low, high);
+    quickSort(arr, low, pivotIdx - 1);
+    quickSort(arr, pivotIdx + 1, high);
+}
 
-    return 0;
+int partition(int arr[], int low, int high)
+{
+    int pivot = arr[high];
+    int idx = low - 1;
+
+    for (int i = low; i < high; i++)
+    {
+        if (arr[i] <= pivot)
+        {
+            idx++;
+            int tmp = arr[i];
+            arr[i] = arr[idx];
+            arr[idx] = tmp;
+        }
+    }
+
+    idx++;
+    arr[high] = arr[idx];
+    arr[idx] = pivot;
+
+    return idx;
 }

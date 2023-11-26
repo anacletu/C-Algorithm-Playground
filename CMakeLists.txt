@@ -31,4 +31,7 @@ target_link_libraries(manual_test_selection_sort PRIVATE selection_sort)
 add_executable(manual_test_insertion_sort tests/manual_test_insertion_sort.c)
 target_link_libraries(manual_test_insertion_sort PRIVATE insertion_sort)
 
+add_executable(manual_test_quick_sort tests/manual_test_quick_sort.c)
+target_link_libraries(manual_test_quick_sort PRIVATE quick_sort)
+
 # Add other tests similarly...
