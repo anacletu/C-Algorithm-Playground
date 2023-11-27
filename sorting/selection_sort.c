@@ -2,11 +2,12 @@
 
 /**
  * Problem:
- * Implement the Insertion Sort algorithm.
+ * Implement the Selection Sort algorithm.
  *
- * Insertion Sort:
- *   - Build a sorted array one element at a time by repeatedly taking elements from the unsorted part
- *     and inserting them into their correct position in the sorted part.
+ * Selection Sort:
+ *   - Divide the array into a sorted and an unsorted region.
+ *   - In each iteration, find the minimum element from the unsorted region and swap it with the first
+ *     element of the unsorted region, extending the sorted region.
  */
 
 void selectionSort(int arr[], size_t size)

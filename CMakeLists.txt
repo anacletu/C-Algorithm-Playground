@@ -22,16 +22,19 @@ add_subdirectory(sorting)
 # Add other directories similarly...
 
 # Manual tests
-add_executable(manual_test_bubble_sort tests/manual_test_bubble_sort.c)
+add_executable(manual_test_bubble_sort tests/sorting_lib/manual_test_bubble_sort.c)
 target_link_libraries(manual_test_bubble_sort PRIVATE bubble_sort)
 
-add_executable(manual_test_selection_sort tests/manual_test_selection_sort.c)
+add_executable(manual_test_selection_sort tests/sorting_lib/manual_test_selection_sort.c)
 target_link_libraries(manual_test_selection_sort PRIVATE selection_sort)
 
-add_executable(manual_test_insertion_sort tests/manual_test_insertion_sort.c)
+add_executable(manual_test_insertion_sort tests/sorting_lib/manual_test_insertion_sort.c)
 target_link_libraries(manual_test_insertion_sort PRIVATE insertion_sort)
 
-add_executable(manual_test_quick_sort tests/manual_test_quick_sort.c)
+add_executable(manual_test_quick_sort tests/sorting_lib/manual_test_quick_sort.c)
 target_link_libraries(manual_test_quick_sort PRIVATE quick_sort)
+
+add_executable(manual_test_merge_sort tests/sorting_lib/manual_test_merge_sort.c)
+target_link_libraries(manual_test_merge_sort PRIVATE merge_sort)
 
 # Add other tests similarly...
