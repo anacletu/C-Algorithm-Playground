@@ -4,7 +4,7 @@ Welcome to my personal collection of algorithm implementations in C! This reposi
 
 ## Motivation
 
-The idea behind this project emerged from a simple desire—to practice and truly comprehend the algorithms I encountered in various educational resources. As a student, I found that implementing algorithms and understanding their running times were essential steps in the learning process. This repository encapsulates my journey of exploration and serves as a tangible record of the algorithms I've encountered, implemented, and studied.
+The idea behind this project emerged from a simple desire — to practice and truly comprehend the algorithms I encountered in various educational resources. As a student, I found that implementing algorithms and understanding their running times were essential steps in the learning process. This repository encapsulates my journey of exploration and serves as a tangible record of the algorithms I've encountered, implemented, and studied.
 
 ## Sharing Knowledge
 
@@ -28,7 +28,7 @@ By publishing this repository on GitHub, I aim to provide a resource for fellow 
 
 Explore various sorting algorithms to understand their efficiency and implementation details.
 
-- [Bubble Sort](sorting/bubble_sort.c) ([Header](sorting/bubble_sort.h)): A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+- [Bubble Sort](sorting/bubble_sort.c): A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 - [Merge Sort](sorting/merge_sort.c): A divide-and-conquer algorithm that divides the array into two halves, sorts them, and then merges the sorted halves.
 - [Quick Sort](sorting/quick_sort.c): A fast, in-place sorting algorithm that uses a divide-and-conquer strategy.
 - [Insertion Sort](sorting/insertion_sort.c): Builds the sorted array one item at a time by repeatedly taking an element from the unsorted part and inserting it into its correct position.
