@@ -9,57 +9,74 @@ void printArray(int array[], size_t size, const char *label)
     {
         printf("%i ", array[i]);
     }
-    printf("\n\n");
+    printf("\n");
 }
 
 void runSelectionSortTest(int array[], size_t size, const char *label)
 {
-    clock_t start, end;
+    // Copy the array for sorting (to keep the original for comparison)
+    int sortedArray[size];
+    for (size_t i = 0; i < size; i++)
+    {
+        sortedArray[i] = array[i];
+    }
 
-    // Measure the runtime of selection sort
-    start = clock();
-    selectionSort(array, size);
-    end = clock();
+    // Measure runtime for selection sort
+    clock_t start = clock();
+    selectionSort(sortedArray, size);
+    clock_t end = clock();
+    double cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
 
-    // Calculate the elapsed time in milliseconds
-    double elapsedTime = ((double)(end - start) / CLOCKS_PER_SEC) * 1000.0;
-
-    // Print the sorted array and the runtime
-    printArray(array, size, label);
-    printf("Selection Sort took %.6f milliseconds.\n\n", elapsedTime);
+    // Print the sorted array and runtime
+    printf("%s\n", label);
+    printArray(array, size, "Original Array");
+    printArray(sortedArray, size, "Sorted Array");
+    printf("Runtime: %f seconds\n\n\n", cpu_time_used);
 }
 
 int main()
 {
     // Test case 1: Regular array
-    int array1[] = {64, 25, 12, 22, 11, 1, 0, 48, 100};
+    int array1[] = {49, 23, 15, 37, 5, 42, 12, 29, 8, 18,
+                    35, 47, 10, 3, 21, 14, 38, 7, 44, 2,
+                    33, 20, 45, 13, 28, 1, 46, 19, 36, 9,
+                    24, 30, 43, 22, 6, 16, 39, 11, 26, 4,
+                    32, 17, 50, 27, 41, 34, 48, 25, 31, 40};
     size_t size1 = sizeof(array1) / sizeof(array1[0]);
 
-    runSelectionSortTest(array1, size1, "Original Array");
+    runSelectionSortTest(array1, size1, "Test case 1: Regular array");
 
     // Test case 2: Empty array
     int emptyArray[] = {};
     size_t sizeEmpty = sizeof(emptyArray) / sizeof(emptyArray[0]);
 
-    runSelectionSortTest(emptyArray, sizeEmpty, "Empty Array");
+    runSelectionSortTest(emptyArray, sizeEmpty, "Test case 2: Empty array");
 
     // Test case 3: Array with a single element
     int singleElementArray[] = {42};
     size_t sizeSingle = sizeof(singleElementArray) / sizeof(singleElementArray[0]);
 
-    runSelectionSortTest(singleElementArray, sizeSingle, "Single Element Array");
+    runSelectionSortTest(singleElementArray, sizeSingle, "Test case 3: Array with a single element");
 
     // Test case 4: Already sorted array
-    int sortedArray[] = {1, 2, 3, 4, 5};
+    int sortedArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                         11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                         21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                         31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+                         41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
     size_t sizeSorted = sizeof(sortedArray) / sizeof(sortedArray[0]);
 
-    runSelectionSortTest(sortedArray, sizeSorted, "Already Sorted Array");
+    runSelectionSortTest(sortedArray, sizeSorted, "Test case 4: Already sorted array");
 
     // Test case 5: Array with duplicate elements
-    int duplicateArray[] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+    int duplicateArray[] = {25, 10, 5, 20, 15, 5, 10, 25, 15, 20,
+                            1, 3, 2, 4, 1, 3, 2, 4, 1, 3,
+                            6, 8, 7, 9, 6, 8, 7, 9, 6, 8,
+                            11, 13, 12, 14, 11, 13, 12, 14, 11, 13,
+                            16, 18, 17, 19, 16, 18, 17, 19, 16, 18};
     size_t sizeDuplicate = sizeof(duplicateArray) / sizeof(duplicateArray[0]);
 
-    runSelectionSortTest(duplicateArray, sizeDuplicate, "Array with Duplicates");
+    runSelectionSortTest(duplicateArray, sizeDuplicate, "Test case 5: Array with duplicate elements");
 
     return 0;
 }

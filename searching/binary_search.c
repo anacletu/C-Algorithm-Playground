@@ -9,16 +9,20 @@
  *   - Return the index of the element if found, or -1 if not found.
  */
 
-// TODO: Implement the binarySearch function
-
-int main()
+int binarySearch(int arr[], int low, int high, int target)
 {
-    // Example usage
-    int array[] = {2, 5, 8, 12, 16, 23, 38, 42, 49, 51};
-    int target = 16;
-    int size = sizeof(array) / sizeof(array[0]);
+    while (low <= high)
+    {
+        int mid = low + (high - low) / 2;
 
-    // TODO: Call the binarySearch function and display the result
+        if (arr[mid] == target)
+            return mid;
 
-    return 0;
+        if (arr[mid] < target)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    return -1; // Element not found
 }

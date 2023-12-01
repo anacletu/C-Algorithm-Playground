@@ -41,3 +41,6 @@ target_link_libraries(manual_test_merge_sort PRIVATE merge_sort)
 # Manual tests for searching
 add_executable(manual_test_linear_search tests/searching_lib/manual_test_linear_search.c)
 target_link_libraries(manual_test_linear_search PRIVATE linear_search)
+
+add_executable(manual_test_binary_search tests/searching_lib/manual_test_binary_search.c)
+target_link_libraries(manual_test_binary_search PRIVATE binary_search)
