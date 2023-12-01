@@ -121,9 +121,8 @@ To run manual tests for specific algorithms, use the following command:
 
 - Example for Bubble Sort: `./manual_test_bubble_sort`
 - Example for Insertion Sort: `./manual_test_insertion_sort`
-- Add other tests similarly for each algorithm.
 
-The compiled executables will be available in the test directory.
+The compiled executables will be available in the **test directory**.
 
 #### Runtime Measurement
 
