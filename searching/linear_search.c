@@ -9,44 +9,18 @@
  *   - Return the index of the element if found, or -1 if not found.
  */
 
-int linearSearch(int arr[], int n, int target);
-
-int main()
+int linearSearch(int arr[], size_t length, int target)
 {
-    // Example usage
-    int array[] = {2, 5, 8, 12, 16, 23, 38, 42, 49, 51};
-    int target = 16;
-    int size = sizeof(array) / sizeof(array[0]);
+    if (arr == NULL)
+        return -1;
 
-    // Perform linear search
-    int result = linearSearch(array, size, target);
-
-    // Display the result
-    if (result != -1)
+    for (size_t i = 0; i < length; i++)
     {
-        printf("Element %d found at index %d\n", target, result);
-    }
-    else
-    {
-        printf("Element %d not found in the array\n", target);
-    }
-
-    return 0;
-}
-
-int linearSearch(int arr[], int n, int target)
-{
-    // Iterate through the array
-    for (int i = 0; i < n; ++i)
-    {
-        // Check if the current element is equal to the target
         if (arr[i] == target)
         {
-            // Return the index if found
-            return i;
+            return i; // returning the index where the target is found
         }
     }
 
-    // Return -1 if the target is not found in the array
-    return -1;
+    return -1; // target not found
 }

@@ -19,9 +19,10 @@ endfunction()
 
 # Add subdirectories
 add_subdirectory(sorting)
+add_subdirectory(searching)
 # Add other directories similarly...
 
-# Manual tests
+# Manual tests for sorting
 add_executable(manual_test_bubble_sort tests/sorting_lib/manual_test_bubble_sort.c)
 target_link_libraries(manual_test_bubble_sort PRIVATE bubble_sort)
 
@@ -37,4 +38,6 @@ target_link_libraries(manual_test_quick_sort PRIVATE quick_sort)
 add_executable(manual_test_merge_sort tests/sorting_lib/manual_test_merge_sort.c)
 target_link_libraries(manual_test_merge_sort PRIVATE merge_sort)
 
-# Add other tests similarly...
+# Manual tests for searching
+add_executable(manual_test_linear_search tests/searching_lib/manual_test_linear_search.c)
+target_link_libraries(manual_test_linear_search PRIVATE linear_search)
