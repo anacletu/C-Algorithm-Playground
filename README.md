@@ -1,6 +1,14 @@
 # My Algorithms Repository
 
-Welcome to my personal collection of algorithm implementations in C! This repository serves as a practical playground for studying algorithms and data structures. Each category focuses on different algorithmic concepts and includes clear implementations for better understanding.
+Welcome to my personal collection of algorithm implementations in C! This repository serves as a dedicated space for honing my skills and gaining a deeper understanding of algorithms and data structures. Inspired by my journey of learning through courses, lectures, and personal exploration, this project is a manifestation of my commitment to mastering these fundamental concepts, including a focus on understanding the efficiency of algorithms through concepts like Big O notation.
+
+## Motivation
+
+The idea behind this project emerged from a simple desire—to practice and truly comprehend the algorithms I encountered in various educational resources. As a student, I found that implementing algorithms and understanding their running times were essential steps in the learning process. This repository encapsulates my journey of exploration and serves as a tangible record of the algorithms I've encountered, implemented, and studied.
+
+## Sharing Knowledge
+
+By publishing this repository on GitHub, I aim to provide a resource for fellow learners. Access to organized and condensed examples, along with insights into the efficiency of algorithms (as denoted by Big O notation), can be immensely beneficial for students navigating the intricate landscape of algorithms. Whether you are just starting your journey or seeking additional examples to reinforce your understanding, this collection is designed to support and enhance your learning experience.
 
 ## Table of Contents
 
@@ -115,7 +123,17 @@ To run manual tests for specific algorithms, use the following command:
 - Example for Insertion Sort: `./manual_test_insertion_sort`
 - Add other tests similarly for each algorithm.
 
-The compiled executables will be available in the build directory.
+The compiled executables will be available in the test directory.
+
+#### Runtime Measurement
+
+The manual tests include a runtime measurement feature using the `clock` function. However, the provided arrays in the tests are for illustrative purposes only and may not yield relevant results. To obtain meaningful runtime data:
+
+1. Open the corresponding manual test file.
+2. Locate the section that measures and prints the runtime.
+3. Customize the test arrays by replacing them with larger, more challenging datasets that better represent real-world scenarios.
+
+**Note:** The default arrays provided are meant as examples and may not sufficiently stress the algorithms for accurate runtime comparisons. Customizing the arrays will ensure more relevant and insightful results.
 
 ## Contribution
 
