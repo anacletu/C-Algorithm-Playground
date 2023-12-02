@@ -11,18 +11,21 @@
 
 int binarySearch(int arr[], int low, int high, int target)
 {
-    while (low <= high)
+    if (arr == NULL || low > high)
+        return -1;
+
+    int middle = (low + high) / 2;
+
+    if (arr[middle] == target)
+        return middle;
+    else if (arr[middle] > target)
     {
-        int mid = low + (high - low) / 2;
-
-        if (arr[mid] == target)
-            return mid;
-
-        if (arr[mid] < target)
-            low = mid + 1;
-        else
-            high = mid - 1;
+        high = middle - 1;
+        return binarySearch(arr, low, high, target);
     }
-
-    return -1; // Element not found
+    else
+    {
+        low = middle + 1;
+        return binarySearch(arr, low, high, target);
+    }
 }
