@@ -156,13 +156,13 @@ The compiled executables will be available in the **tests directory**.
 
 #### Runtime Measurement
 
-The manual tests include a runtime measurement feature using the `clock` function. However, the provided arrays in the tests are for illustrative purposes only and may not yield relevant results. To obtain meaningful runtime data:
+The manual tests include a runtime measurement feature using the `clock` function. However, the provided values and arrays in the tests are for illustrative purposes only and may not yield relevant results. To obtain meaningful runtime data:
 
 1. Open the corresponding manual test file.
 2. Locate the section that measures and prints the runtime.
-3. Customize the test arrays by replacing them with larger, more challenging datasets that better represent real-world scenarios.
+3. Customize the test values by replacing them with larger, more challenging datasets that better represent real-world scenarios.
 
-**Note:** The default arrays provided are meant as examples and may not sufficiently stress the algorithms for accurate runtime comparisons. Customizing the arrays will ensure more relevant and insightful results.
+**Note:** The default arrays and values provided are meant as examples and may not sufficiently stress the algorithms for accurate runtime comparisons. Customizing the numbers will ensure more relevant and insightful results.
 
 ## Contribution
 
