@@ -26,8 +26,9 @@ In this document, we analyze the time complexity of various algorithms implement
 20. [Enhanced Stack](#enhanced-stack)
 21. [Recursive Pathfinder](#recursive-pathfinder)
 22. [Dijkstra's Pathfinder](#dijkstras-pathfinder)
-23. [Longest Increasing Subsequence](#longest-increasing-subsequence)
-24. [Sliding Window Pattern](#sliding-window-pattern)
+23. [Karatsuba Algorithm](#karatsuba-algorithm)
+24. [Longest Increasing Subsequence](#longest-increasing-subsequence)
+25. [Sliding Window Pattern](#sliding-window-pattern)
 
 ## Bubble Sort
 
@@ -160,6 +161,12 @@ The Recursive Pathfinder algorithm may have an exponential time complexity, espe
 ### Time Complexity: O((V + E) log V), where V is the number of vertices and E is the number of edges
 
 Dijkstra's Pathfinder has a time complexity of O((V + E) log V) using a priority queue to efficiently select the vertex with the minimum distance.
+
+## Karatsuba Algorithm
+
+### Time Complexity: O(n^1.585)
+
+The Karatsuba algorithm is a fast multiplication algorithm with a time complexity of O(n^1.585). It uses a divide and conquer strategy to multiply two numbers. However, due to the limitations of the C language without an external library, there are constraints on the size of numbers that can be handled.
 
 ## Longest Increasing Subsequence
 
