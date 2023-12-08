@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "linear_search.h"
 
 /**
  * Problem:

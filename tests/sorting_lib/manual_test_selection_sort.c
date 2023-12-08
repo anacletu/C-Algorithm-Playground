@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <time.h>
 #include "../../sorting/selection_sort.h"
 
 void printArray(int array[], size_t size, const char *label)

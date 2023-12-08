@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <time.h>
 #include "../../mathematical/karatsuba.h"
 
 void printResult(long long result, long long num1, long long num2)

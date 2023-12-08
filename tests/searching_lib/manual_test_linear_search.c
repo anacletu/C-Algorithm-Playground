@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <time.h>
 #include "../../searching/linear_search.h"
 
 void printResult(int result, int target)
