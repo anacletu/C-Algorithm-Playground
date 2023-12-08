@@ -19,6 +19,7 @@ By publishing this repository on GitHub, I aim to provide a resource for fellow 
 - [Queues](#queues)
 - [Stacks](#stacks)
 - [Pathfinding](#pathfinding)
+- [Mathematical Algorithms](#mathematical-algorithms)
 - [Algorithmic Challenges](#algorithmic-challenges)
 - [Algorithmic Patterns](#algorithmic-patterns)
 - [Algorithmic Analysis](#algorithmic-analysis)
@@ -81,6 +82,12 @@ Discover pathfinding algorithms for traversing graphs.
 - [Recursive Pathfinder](pathfinding/recursive_pathfinder.c): A pathfinding algorithm that uses recursion.
 - [Dijkstra Pathfinder](pathfinding/dijkstra_pathfinder.c): An algorithm for finding the shortest paths between nodes in a graph.
 
+## Mathematical Algorithms
+
+Explore various mathematical algorithms to understand their efficiency and implementation details.
+
+- [Karatsuba Algorithm](mathematical/karatsuba.c): A fast multiplication algorithm that uses a divide and conquer approach. It multiplies two n-digit numbers in less than O(n^2) elementary steps. Note: Due to the limitations of the C language without an external library, there are constraints on the size of numbers that can be calculated.
+
 ## Algorithmic Challenges
 
 Take on algorithmic challenges to enhance your problem-solving skills.
@@ -103,7 +110,31 @@ Learn about time complexity analysis and understand the efficiency of various al
 
 Conduct manual tests for various algorithms to ensure their correctness.
 
-- [Manual Test for Bubble Sort](tests/manual_test_bubble_sort.c): A manual test for the bubble sort algorithm.
+- [Manual Test for Bubble Sort](tests/sorting_lib/manual_test_bubble_sort.c)
+- [Manual Test for Merge Sort](tests/sorting_lib/manual_test_merge_sort.c)
+- [Manual Test for Quick Sort](tests/sorting_lib/manual_test_quick_sort.c)
+- [Manual Test for Insertion Sort](tests/sorting_lib/manual_test_insertion_sort.c)
+- [Manual Test for Selection Sort](tests/sorting_lib/manual_test_selection_sort.c)
+- [Manual Test for Binary Search](tests/searching_lib/manual_test_binary_search.c)
+- [Manual Test for Linear Search](tests/searching_lib/manual_test_linear_search.c)
+- [Manual Test for Interpolation Search](tests/searching_lib/manual_test_interpolation_search.c)
+- [Manual Test for Singly Linked List](tests/linked_lists_lib/manual_test_singly_linked_list.c)
+- [Manual Test for Doubly Linked List](tests/linked_lists_lib/manual_test_doubly_linked_list.c)
+- [Manual Test for Circular Linked List](tests/linked_lists_lib/manual_test_circular_linked_list.c)
+- [Manual Test for Binary Tree](tests/trees_lib/manual_test_binary_tree.c)
+- [Manual Test for AVL Tree](tests/trees_lib/manual_test_AVL_tree.c)
+- [Manual Test for Post-order Traversal](tests/trees_lib/manual_test_post_order_traversal.c)
+- [Manual Test for Queue using Linked List](tests/queues_lib/manual_test_queue_using_linked_list.c)
+- [Manual Test for Queue using Array](tests/queues_lib/manual_test_queue_using_array.c)
+- [Manual Test for Priority Queue](tests/queues_lib/manual_test_priority_queue.c)
+- [Manual Test for Stack using Linked List](tests/stacks_lib/manual_test_stack_using_linked_list.c)
+- [Manual Test for Stack using Array](tests/stacks_lib/manual_test_stack_using_array.c)
+- [Manual Test for Enhanced Stack](tests/stacks_lib/manual_test_enhanced_stack.c)
+- [Manual Test for Recursive Pathfinder](tests/pathfinding_lib/manual_test_recursive_pathfinder.c)
+- [Manual Test for Dijkstra Pathfinder](tests/pathfinding_lib/manual_test_dijkstra_pathfinder.c)
+- [Manual Test for Karatsuba Algorithm](tests/mathematical_lib/manual_test_karatsuba.c)
+- [Manual Test for Longest Increasing Subsequence](tests/algorithmic_challenges_lib/manual_test_longest_increasing_subsequence.c)
+- [Manual Test for Sliding Window](tests/algorithmic_patterns_lib/manual_test_sliding_window.c)
 
 ## Build Instructions for Testing
 
@@ -117,12 +148,11 @@ To build the project and run the tests, follow these steps:
 
 ### Run Manual Tests
 
-To run manual tests for specific algorithms, use the following command:
+To run manual tests for specific algorithms, use the following command once in the same directory:
 
 - Example for Bubble Sort: `./manual_test_bubble_sort`
-- Example for Insertion Sort: `./manual_test_insertion_sort`
 
-The compiled executables will be available in the **test directory**.
+The compiled executables will be available in the **tests directory**.
 
 #### Runtime Measurement
 
