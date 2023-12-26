@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "singly_linked_list.h"
 
 /**
  * Problem:
@@ -8,12 +8,29 @@
  *   - Basic linked list operations: insert, delete, and display.
  */
 
-// TODO: Implement the singlyLinkedList functions
-
-int main()
+Node *createNode(int value)
 {
-    // Example usage
-    // TODO: Create a singly linked list and perform linked list operations
+    Node *newNode = (Node *)malloc(sizeof(Node));
+    if (newNode == NULL)
+    {
+        printf("Memory allocation failed\n");
+        return NULL;
+    }
 
-    return 0;
+    newNode->data = value;
+    newNode->next = NULL;
+
+    return newNode;
+}
+
+void insertNode(LinkedList *list, int value)
+{
+    Node *newNode = createNode(value);
+    if (newNode == NULL)
+    {
+        return;
+    }
+
+    newNode->next = list->head;
+    list->head = newNode;
 }

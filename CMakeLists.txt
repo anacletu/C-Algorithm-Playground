@@ -21,6 +21,7 @@ endfunction()
 add_subdirectory(sorting)
 add_subdirectory(searching)
 add_subdirectory(mathematical)
+add_subdirectory(linked_lists)
 
 # Manual tests for sorting
 add_executable(manual_test_bubble_sort tests/sorting_lib/manual_test_bubble_sort.c)
@@ -48,3 +49,7 @@ target_link_libraries(manual_test_binary_search PRIVATE binary_search)
 # Manual tests for mathematical
 add_executable(manual_test_karatsuba tests/mathematical_lib/manual_test_karatsuba.c)
 target_link_libraries(manual_test_karatsuba PRIVATE karatsuba)
+
+# Manual tests for linked lists
+add_executable(manual_test_linked_list tests/linked_list_lib/manual_test_linked_list.c)
+target_link_libraries(manual_test_linked_list PRIVATE singly_linked_list)
