@@ -3,5 +3,5 @@ function(add_algorithm ALGORITHM_NAME)
  add_library(${ALGORITHM_NAME} ${ALGORITHM_NAME}.c)
 endfunction()
 
-# Add mathematical algorithms
-add_algorithm(karatsuba)
+# Add divide and conquer algorithms
+add_algorithm(inversions)

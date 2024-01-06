@@ -22,6 +22,7 @@ add_subdirectory(sorting)
 add_subdirectory(searching)
 add_subdirectory(mathematical)
 add_subdirectory(linked_lists)
+add_subdirectory(divide_and_conquer)
 
 # Manual tests for sorting
 add_executable(manual_test_bubble_sort tests/sorting_lib/manual_test_bubble_sort.c)
@@ -53,3 +54,7 @@ target_link_libraries(manual_test_karatsuba PRIVATE karatsuba)
 # Manual tests for linked lists
 add_executable(manual_test_linked_list tests/linked_list_lib/manual_test_linked_list.c)
 target_link_libraries(manual_test_linked_list PRIVATE singly_linked_list)
+
+# Manual tests for divide and conquer
+add_executable(manual_test_inversions tests/divide_and_conquer_lib/manual_test_inversions.c)
+target_link_libraries(manual_test_inversions PRIVATE inversions)
