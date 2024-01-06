@@ -12,23 +12,24 @@ In this document, we analyze the time complexity of various algorithms implement
 6. [Linear Search](#linear-search)
 7. [Binary Search](#binary-search)
 8. [Interpolation Search](#interpolation-search)
-9. [Singly Linked List](#singly-linked-list)
-10. [Doubly Linked List](#doubly-linked-list)
-11. [Circular Linked List](#circular-linked-list)
-12. [Binary Tree](#binary-tree)
-13. [AVL Tree](#avl-tree)
-14. [Post-order Traversal](#post-order-traversal)
-15. [Queue using Linked List](#queue-using-linked-list)
-16. [Queue using Array](#queue-using-array)
-17. [Priority Queue](#priority-queue)
-18. [Stack using Linked List](#stack-using-linked-list)
-19. [Stack using Array](#stack-using-array)
-20. [Enhanced Stack](#enhanced-stack)
-21. [Recursive Pathfinder](#recursive-pathfinder)
-22. [Dijkstra's Pathfinder](#dijkstras-pathfinder)
-23. [Karatsuba Algorithm](#karatsuba-algorithm)
-24. [Longest Increasing Subsequence](#longest-increasing-subsequence)
-25. [Sliding Window Pattern](#sliding-window-pattern)
+9. [Inversions Counting](#inversions-counting)
+10. [Singly Linked List](#singly-linked-list)
+11. [Doubly Linked List](#doubly-linked-list)
+12. [Circular Linked List](#circular-linked-list)
+13. [Binary Tree](#binary-tree)
+14. [AVL Tree](#avl-tree)
+15. [Post-order Traversal](#post-order-traversal)
+16. [Queue using Linked List](#queue-using-linked-list)
+17. [Queue using Array](#queue-using-array)
+18. [Priority Queue](#priority-queue)
+19. [Stack using Linked List](#stack-using-linked-list)
+20. [Stack using Array](#stack-using-array)
+21. [Enhanced Stack](#enhanced-stack)
+22. [Recursive Pathfinder](#recursive-pathfinder)
+23. [Dijkstra's Pathfinder](#dijkstras-pathfinder)
+24. [Karatsuba Algorithm](#karatsuba-algorithm)
+25. [Longest Increasing Subsequence](#longest-increasing-subsequence)
+26. [Sliding Window Pattern](#sliding-window-pattern)
 
 ## Bubble Sort
 
@@ -77,6 +78,12 @@ Binary Search has a time complexity of O(log n). It repeatedly divides the sorte
 ### Time Complexity: O(log log n) on average
 
 Interpolation Search has an average time complexity of O(log log n) when the elements are uniformly distributed. It uses interpolation formula to estimate the position of the target element.
+
+## Inversions Counting
+
+### Time Complexity: O(n log n)
+
+The Inversions Counting Algorithm exhibits a time complexity of O(n log n). This algorithm employs a divide-and-conquer strategy, similar to Merge Sort. It recursively divides the input array into smaller subarrays until reaching single elements, then merges and counts inversions in a manner that efficiently determines how far the array is from being sorted. The essence of the divide-and-conquer approach contributes to the overall time complexity of O(n log n), making the Inversions Counting Algorithm a reliable method for analyzing and quantifying the level of disorder in an array.
 
 ## Singly Linked List
 

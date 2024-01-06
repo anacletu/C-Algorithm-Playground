@@ -1,4 +1,4 @@
-# My Algorithms Repository
+# My Algorithms Repository (work in progress)
 
 Welcome to my personal collection of algorithm implementations in C! This repository serves as a dedicated space for honing my skills and gaining a deeper understanding of algorithms and data structures. Inspired by my journey of learning through courses, lectures, and personal exploration, this project is a manifestation of my commitment to mastering these fundamental concepts, including a focus on understanding the efficiency of algorithms through concepts like Big O notation.
 
@@ -14,14 +14,15 @@ By publishing this repository on GitHub, I aim to provide a resource for fellow 
 
 - [Sorting](#sorting)
 - [Searching](#searching)
+- [Divide and Conquer](#divide_and_conquer)
 - [Linked Lists](#linked-lists)
-- [Trees](#trees)
-- [Queues](#queues)
-- [Stacks](#stacks)
-- [Pathfinding](#pathfinding)
+- [Trees](#trees) **In Progress**
+- [Queues](#queues) **In Progress**
+- [Stacks](#stacks) **In Progress**
+- [Pathfinding](#pathfinding) **In Progress**
 - [Mathematical Algorithms](#mathematical-algorithms)
-- [Algorithmic Challenges](#algorithmic-challenges)
-- [Algorithmic Patterns](#algorithmic-patterns)
+- [Algorithmic Challenges](#algorithmic-challenges) **In Progress**
+- [Algorithmic Patterns](#algorithmic-patterns) **In Progress**
 - [Algorithmic Analysis](#algorithmic-analysis)
 - [Manual Tests](#manual-tests)
 
@@ -41,15 +42,21 @@ Discover different searching algorithms to find elements efficiently in various 
 
 - [Binary Search](searching/binary_search.c): An efficient algorithm for finding an item from a sorted list of items.
 - [Linear Search](searching/linear_search.c): A simple search algorithm that looks at each element in sequence.
-- [Interpolation Search](searching/interpolation_search.c): An algorithm that estimates the position of the target value and performs binary search accordingly.
+- [Interpolation Search](searching/interpolation_search.c): An algorithm that estimates the position of the target value and performs binary search accordingly. **In Progress**
+
+## Divide and Conquer
+
+Explore other examples of algorithms that make use of the 'divide and conquer' approach.
+
+- [Inversions Counting](divide_and_conquer/inversions.c): An algorithm that leverages merge sort to count inversions.
 
 ## Linked Lists
 
 Explore linked list structures with variations such as singly linked lists, doubly linked lists, and circular linked lists.
 
 - [Singly Linked List](linked_lists/singly_linked_list.c): A basic linked list where each node points to the next node in the sequence.
-- [Doubly Linked List](linked_lists/doubly_linked_list.c): A linked list in which each node contains a data element and two pointers, one pointing to the next node and one pointing to the previous node.
-- [Circular Linked List](linked_lists/circular_linked_list.c): A linked list in which the last node points back to the first node.
+- [Doubly Linked List](linked_lists/doubly_linked_list.c): A linked list in which each node contains a data element and two pointers, one pointing to the next node and one pointing to the previous node. **In Progress**
+- [Circular Linked List](linked_lists/circular_linked_list.c): A linked list in which the last node points back to the first node. **In Progress**
 
 ## Trees
 
@@ -118,6 +125,7 @@ Conduct manual tests for various algorithms to ensure their correctness.
 - [Manual Test for Binary Search](tests/searching_lib/manual_test_binary_search.c)
 - [Manual Test for Linear Search](tests/searching_lib/manual_test_linear_search.c)
 - [Manual Test for Interpolation Search](tests/searching_lib/manual_test_interpolation_search.c)
+- [Manual Test for Inversions Counting](tests/divide_and_conquer_lib/manual_test_inversions.c)
 - [Manual Test for Singly Linked List](tests/linked_lists_lib/manual_test_singly_linked_list.c)
 - [Manual Test for Doubly Linked List](tests/linked_lists_lib/manual_test_doubly_linked_list.c)
 - [Manual Test for Circular Linked List](tests/linked_lists_lib/manual_test_circular_linked_list.c)
